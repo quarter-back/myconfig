@@ -8,6 +8,7 @@ set smartcase
 set noeb
 "set hlsearch
 set rnu
+set number
 set ruler
 set ai
 set ignorecase
@@ -91,6 +92,7 @@ Plug 'vim-airline/vim-airline'
 "Plug 'mbbill/undotree'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
+Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/vim-easy-align'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
