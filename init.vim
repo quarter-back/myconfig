@@ -27,12 +27,12 @@ set autoindent
 "leader
 let mapleader=" "
 nmap <leader>wq :wq<CR>
-nmap <leader>F :Format<CR>
+nmap <leader>fm :Format<CR>
 
 "括号自动补全
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
-inoremap { {}<LEFT><CR><CR><UP><TAB>
+inoremap { {}<LEFT>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 
@@ -79,6 +79,10 @@ nnoremap = N
 "q+<register>+指令+q
 "times+@+<register>
 
+"格式化代码
+map <leader>ma :!clang-format -style=LLVM -dump-config>.clang-format<CR>
+
+
 "===
 "=== young@_的奇怪操作
 "===
@@ -86,7 +90,9 @@ nnoremap D di)i
 nnoremap U i<RIGHT>
 inoremap <Space><Space> <ESC>$i<RIGHT>;<CR>
 map R :source $MYVIMRC<CR>
-
+nnoremap <leader>w <C-w>
+map <leader>- :-tabnext<CR>
+map <leader>= :+tabnext<CR>
 
 " ===
 " === 插件
@@ -95,7 +101,7 @@ call plug#begin()
 
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
-"Plug 'mbbill/undotree'
+Plug 'mbbill/undotree'
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify'
 Plug 'godlygeek/tabular'
