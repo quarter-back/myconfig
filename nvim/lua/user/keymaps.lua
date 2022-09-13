@@ -16,12 +16,57 @@ vim.g.maplocalleader = ";"
 --   visual_block_mode = "x",
 --   term_mode = "t", command_mode = "c",
 
+
+
+
+-- @_ young
+-- 116
+keymap("n", "n", "j", opts)
+keymap("n", "e", "k", opts)
+keymap("n", "i", "l", opts)
+keymap("n", "o", "k", opts)
+
+keymap("n", "N", "jjjjjj", opts)
+keymap("n", "E", "kkkkkk", opts)
+keymap("n", "I", "llllll", opts)
+keymap("n", "O", "kkkkkk", opts)
+
+keymap("n", "u", "i", opts)
+keymap("n", "y", "o", opts)
+
+keymap("n", "cc", "yy", opts)
+keymap("n", "v", "p", opts)
+keymap("n", "xx", "dd", opts)
+keymap("n", "z", "u", opts)
+
+keymap("n", "w", "b", opts)
+keymap("n", "r", "w", opts)
+
+keymap("n", "(", "^", opts)
+keymap("n", ")", "$", opts)
+
+keymap("n", "D", "di)i", opts)
+keymap("n", "U", "i<RIGHT>", opts)
+keymap("i", "<Space><Space>", "<ESC>$i<RIGHT>;<CR>", opts)
+keymap("n", "<leader>o", "<C-w>", opts)
+-- keymap("n", "<leader>-", ":-tabnext<CR>", opts)
+-- keymap("n", "<leader>=", ":+tabnext<CR>", opts)
+
+
+--nnoremap <leader>w <C-w>
+--map <leader>- :-tabnext<CR>
+--map <leader>= :+tabnext<CR>
+
+-- 录制宏、调用
+-- q+<register>+指令+q
+-- times+@+<register>
+
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<C-i>", "<C-w>h", opts)
+keymap("n", "<C-o>", "<C-w>j", opts)
+keymap("n", "<C-n>", "<C-w>k", opts)
+keymap("n", "<C-e>", "<C-w>l", opts)
 -- NOTE: require winshit plugin
 keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 
@@ -51,9 +96,9 @@ keymap("n", "Q", "q", opts)
 keymap("n", "q", "<Nop>", opts)
 
 -- center cursor
-keymap("n", "n", "nzzzv", opts)
-keymap("n", "N", "Nzzzv", opts)
-keymap("n", "J", "mzJ`z", opts)
+-- keymap("n", "n", "nzzzv", opts)
+-- keymap("n", "N", "Nzzzv", opts)
+-- keymap("n", "J", "mzJ`z", opts)
 -- keymap("n", "j", "jzz", opts)
 -- keymap("n", "k", "kzz", opts)
 
@@ -68,19 +113,19 @@ keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 -- keymap("n", "E", ":bprevious<CR>", opts)
 -- NOTE: E/R navigation needs  'bufferline' plugin
 keymap("n", "R", ":BufferLineCycleNext<CR>", opts)
-keymap("n", "E", ":BufferLineCyclePrev<CR>", opts)
+-- keymap("n", "E", ":BufferLineCyclePrev<CR>", opts)
 
 -- Navigate line
-keymap("n", "H", "^", opts)
-keymap("n", "L", "$", opts)
-keymap("v", "H", "^", opts)
-keymap("v", "L", "$", opts)
+-- keymap("n", "H", "^", opts)
+-- keymap("n", "l", "$", opts)
+-- keymap("v", "h", "^", opts)
+-- keymap("v", "l", "$", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- Insert --
+-- Insert 
 -- Press jl fast to enter
 keymap("i", "jl", "<ESC>", opts)
 
