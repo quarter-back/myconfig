@@ -1,0 +1,162 @@
+{
+    "window.zoomLevel": 2,
+    "workbench.startupEditor": "none",
+    "editor.accessibilitySupport": "off",
+    "editor.fontSize": 14,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrains Mono,Menlo, Monaco, 'Courier New', monospace",
+    "C_Cpp.formatting": "clangFormat",
+    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module . -trace make clean all -Input${workspaceFolder/build/compile_commands.json}",
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "todohighlight.defaultStyle": {
+    
+    },
+    "todohighlight.keywords": [
+    
+    
+    ],
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.codeAnalysis.clangTidy.headerFilter": "",
+    "C_Cpp.caseSensitiveFileSupport": "enabled",
+    "html.format.unformatted": "",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.cursorStyle": "line",
+    "vim.commandLineModeKeyBindings": [
+
+
+    
+    ],
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.neovimUseConfigFile": true,
+    "vim.neovimConfigPath": "~/.config/nvim/init.vim",
+    "vim.visualModeKeyBindings": [
+    
+    ],
+    "vim.leader": "\\",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["u"],
+            "after": ["a"]
+        },
+        {
+            "before": ["U"],
+            "after": ["i"]
+        },
+        {
+            "before": ["y"],
+            "after": ["o"]
+        },
+        {
+            "before": ["w"],
+            "after": ["b"]
+        },
+        {
+            "before": ["r"],
+            "after": ["w"]
+        },
+        {
+            "before": ["("],
+            "after": ["^"]
+        },
+        {
+            "before": [")"],
+            "after": ["$"]
+        },
+        {
+            "before": ["n"],
+            "after": ["j"]
+        }, 
+        {
+            "before": ["e"],
+            "after": ["k"]
+        },
+        {
+            "before": ["i"],
+            "after": ["l"]
+        },
+        {
+            "before": ["o"],
+            "after": ["h"]
+        },
+        {
+          "before": ["N"],
+          "after": ["j", "j", "j", "j", "j", "j"]
+        },
+        {
+            "before": ["E"],
+            "after": ["k", "k", "k", "k", "k", "k"]
+        },
+        {
+            "before": ["I"],
+            "after": ["l", "l", "l", "l", "l", "l"]
+        },
+        {
+            "before": ["O"],
+            "after": ["h", "h", "h", "h", "h", "h"]
+        }, 
+        {
+            "before": ["D"],
+            "after": ["d", "i", ")", "i"]
+        },
+        {
+            "before": ["c", "c"],
+            "after": ["y", "y"]
+        },
+        {
+            "before": ["v"],
+            "after": ["p"]
+        },
+        {
+            "before": ["x", "x"],
+            "after": ["d", "d"]
+        },
+        {
+            "before": ["z"],
+            "after": ["u"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "after" : ["d", "a", "w", "i", "<space>"]
+        },
+        {
+            "before": ["-"],
+            "after": ["n"]
+        },
+        {
+            "before": ["="],
+            "after": ["N"]
+        }
+    ],
+
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["<leader>", "<leader>"],
+          "after": ["<Esc>", "$", "a", ";", "<CR>"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "cmake.statusbar.visibility": "icon",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#87b5ae",
+        "statusBar.noFolderBackground": "#15291a",
+        "statusBar.debuggingBackground": "#6d2a10"
+    },
+    "vim.statusBarColors.easymotioninputmode": "",
+    "vim.statusBarColors.insert": "#005f0f",
+    "vim.statusBarColors.normal": "#0030f8",
+    "cmake.statusbar.advanced": {
+
+    
+    },
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.fontSize": 18,
+    
+}
