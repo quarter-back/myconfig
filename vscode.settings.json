@@ -1,5 +1,4 @@
 {
-    "window.zoomLevel": 2,
     "workbench.startupEditor": "none",
     "editor.accessibilitySupport": "off",
     "editor.fontSize": 14,
@@ -12,21 +11,16 @@
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",
     "diffEditor.ignoreTrimWhitespace": false,
-    "todohighlight.defaultStyle": {
-    
-    },
-    "todohighlight.keywords": [
     
     
-    ],
     "C_Cpp.autocompleteAddParentheses": true,
     "C_Cpp.codeAnalysis.clangTidy.headerFilter": "",
     "C_Cpp.caseSensitiveFileSupport": "enabled",
     "html.format.unformatted": "",
-    "workbench.colorTheme": "Visual Studio Dark - C++",
-    "terminal.explorerKind": "external",
-    "terminal.integrated.cursorStyle": "line",
     "vim.commandLineModeKeyBindings": [
+    
+        
+
 
 
     
@@ -124,39 +118,131 @@
             "after" : ["d", "a", "w", "i", "<space>"]
         },
         {
-            "before": ["-"],
+            "before": ["="],
             "after": ["n"]
         },
         {
-            "before": ["="],
+            "before": ["-"],
             "after": ["N"]
+        },
+        {
+            "before": ["<leader>", "left"],
+            "after": ["<C-w>", "left"]
+        },
+        {   
+            "before": ["<leader>", "right"],
+            "after": ["<C-w>", "right"]
         }
+       
     ],
-
+    // dw de dE   
+    // db dB 
     "vim.insertModeKeyBindings": [
+    
+
+    
         {
           "before": ["<leader>", "<leader>"],
           "after": ["<Esc>", "$", "a", ";", "<CR>"]
         }
     ],
     "vim.handleKeys": {
+
         "<C-a>": false,
         "<C-f>": false
     },
-    "cmake.statusbar.visibility": "icon",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#87b5ae",
-        "statusBar.noFolderBackground": "#15291a",
-        "statusBar.debuggingBackground": "#6d2a10"
+        "statusBar.background": "#739893",
     },
     "vim.statusBarColors.easymotioninputmode": "",
     "vim.statusBarColors.insert": "#005f0f",
     "vim.statusBarColors.normal": "#0030f8",
     "cmake.statusbar.advanced": {
 
+
+
+
+    
+
     
     },
     "terminal.integrated.defaultLocation": "editor",
     "terminal.integrated.fontSize": 18,
+    "debug.javascript.debugByLinkOptions": "on",
+    "todohighlight.include": [
+
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss"
+    ],
+    "editor.lineNumbers": "relative",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "clangd.path": "/usr/bin/clangd",
+    "C_Cpp.commentContinuationPatterns": [
+
+        "/**"
+    ],
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.exclude": {
+
     
+    },
+    "C_Cpp.addNodeAddonIncludePaths": true,
+    "C_Cpp.default.cppStandard": "c++14",
+    "vim.statusBarColors.commandlineinprogress": "#007acc",
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+    
+    ],
+    "vim.digraphs": {
+    
+
+    
+    },
+    "terminal.explorerKind": "external",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "cmake.statusbar.visibility": "icon",
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "sqltools.autoConnectTo": "",
+    "debug.toolBarLocation": "docked",
+    "git.ignoreLegacyWarning": true,
+    "gitlens.blame.dateFormat": "",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "tabnine.experimentalAutoImports": true,
+    "vitest.exclude": [
+    
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/cypress/**",
+        "**/.{idea,git,cache,output,temp}/**"
+    ],
+    "gitlens.proxy": {
+    
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "bookmarks.saveBookmarksInProject": true,
+    "terminal.external.osxExec": "Warp.app",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.autoComplete.extraPaths": [
+        
+    ],
+    "python.analysis.extraPaths": [],
+    "window.zoomLevel": 1,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
 }
