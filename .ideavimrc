@@ -1,0 +1,77 @@
+
+" ===
+" === --> young 's vimrc
+" ===
+
+let mapleader="\"
+
+set scrolloff=10
+set surround
+set easymotion
+set cursorline
+set ignorecase
+set number
+set relativenumber 
+
+nnoremap u a
+nnoremap U i
+nnoremap y o
+
+nnoremap r w
+nnoremap w b
+
+nnoremap n j
+nnoremap e k
+nnoremap i l
+nnoremap o h
+nnoremap N jjjjjjjj
+nnoremap E kkkkkkkk
+nnoremap I llllllll
+nnoremap O hhhhhhhh
+
+nnoremap ( ^
+nnoremap ) $
+
+nnoremap cc yy
+nnoremap v p
+nnoremap xx dd
+nnoremap z u
+
+nnoremap k v
+nnoremap K V
+nnoremap <CR>k <CR>v
+
+vnoremap n j
+vnoremap e k
+vnoremap i l
+vnoremap o h
+vnoremap N 8j
+vnoremap E 8k
+vnoremap I 8l
+vnoremap O 8h
+vnoremap ( ^
+vnoremap ) $
+
+
+nnoremap - n
+nnoremap = N
+
+" ===
+" === --> map weirdo
+" ===
+
+nnoremap <leader>d dawi
+inoremap <leader><leader> <ESC>$i<RIGHT>;<CR>
+nnoremap D di)i
+nnoremap <leader><RIGHT> <C-w><RIGHT>
+nnoremap <leader><LEFT> <C-w><LEFT>
+
+" ===
+" === --> map action
+" ===
+
+map \b <Action>(ToggleLineBreakpoint)
+map \t <Action>(OpenInTerminal)
+map \f <Action>(GotoFile)
+map \r <Action>(RenameElement)
+map \e <Action>(GotoNextError)
