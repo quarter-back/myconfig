@@ -60,6 +60,19 @@ nnoremap d c
 noremap g g
 noremap G G
 nnoremap k v
+nnoremap K V
+nnoremap <CR>k <CR>v 
+vnoremap n j
+vnoremap e k
+vnoremap i l
+vnoremap o h
+vnoremap N 8j
+vnoremap E 8k
+vnoremap I 8l
+vnoremap O 8h
+vnoremap ( ^
+vnoremap ) $
+
 nnoremap = n
 nnoremap - N
 map <leader>ma :!clang-format -style=LLVM -dump-config>.clang-format<CR>
